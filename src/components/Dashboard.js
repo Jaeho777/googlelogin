@@ -1,4 +1,3 @@
-// src/components/Dashboard.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +10,6 @@ const Dashboard = () => {
     if (user) {
       setUserInfo(JSON.parse(user));
     } else {
-      // 사용자 정보가 없으면 로그인 페이지로 리다이렉트
       navigate('/');
     }
   }, [navigate]);
